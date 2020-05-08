@@ -278,6 +278,15 @@ main>section {
 .footer {
     border-top: 1px solid #dbdbdb;
     padding: 3rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: -100%;
+    background-color: var(--light);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.footer.active {
+    bottom: 0;
 }
 
 .footer .container {
@@ -326,6 +335,7 @@ main>section {
 .social-nav a:last-of-type {
     margin-right: 0;
 }
+
 .social-nav a::before {
     font-family: "Font Awesome 5 Brands";
     color: var(--dark);
